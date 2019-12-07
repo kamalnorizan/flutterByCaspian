@@ -9,7 +9,12 @@ class Screen1 extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text('Screen 1'),
+          child: RaisedButton(
+            child: Text('Got Screen2'),
+            onPressed: () {
+              Navigator.pushNamed(context, 'screen2');
+            },
+          )
         ),
       ),
     );

@@ -9,7 +9,12 @@ class Screen3 extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text('Screen 2'),
+          child: RaisedButton(
+            child: Text('Got Screen2'),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          )
         ),
       ),
     );
