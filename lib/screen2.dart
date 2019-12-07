@@ -15,14 +15,17 @@ class _Screen2State extends State<Screen2> {
         title: Text('Screen 2'),
       ),
       body: Center(
-        child: Container(
-            child: RaisedButton(
-          child: Text('Got Screen3'),
-          onPressed: () {
-            Navigator.pushNamed(context, 'screen3');
-          },
-        )),
-      ),
+          child: Column(
+        children: <Widget>[
+          Text(widget.objectToPass),
+          RaisedButton(
+            child: Text('Got Screen3'),
+            onPressed: () {
+              Navigator.pushNamed(context, 'screen3');
+            },
+          )
+        ],
+      )),
     );
   }
 }
