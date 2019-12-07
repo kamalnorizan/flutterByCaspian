@@ -19,7 +19,13 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.all(10),
                 padding: EdgeInsets.all(10),
                 child: Column(
-                  children: <Widget>[Icon(Icons.star), Text('Star1'), Image.network('https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png', width:100)],
+                  children: <Widget>[
+                    Icon(Icons.star),
+                    Text('Star1'),
+                    Image.network(
+                        'https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png',
+                        width: 100)
+                  ],
                 ),
               ),
               Container(
@@ -27,7 +33,11 @@ class MyApp extends StatelessWidget {
                 color: Colors.green,
                 margin: EdgeInsets.all(10),
                 child: Column(
-                  children: <Widget>[Icon(Icons.star), Text('Star1'), Image.asset('assets/beigecream - Copy.jpg')],
+                  children: <Widget>[
+                    Icon(Icons.star),
+                    Text('Star1'),
+                    Image.asset('assets/beigecream - Copy.jpg')
+                  ],
                 ),
               ),
               Container(
