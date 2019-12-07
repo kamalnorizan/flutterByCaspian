@@ -9,13 +9,13 @@ class Screen3 extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: RaisedButton(
-            child: Text('Go back to screen 1'),
-            onPressed: () {
-              Navigator.of(context).pushNamedAndRemoveUntil('screen1',(Route<dynamic> route) => false);
-            },
-          )
-        ),
+            child: RaisedButton(
+          child: Text('Go back to screen 1'),
+          onPressed: () {
+            Navigator.of(context).pushNamedAndRemoveUntil(
+                'screen1', (Route<dynamic> route) => false);
+          },
+        )),
       ),
     );
   }
