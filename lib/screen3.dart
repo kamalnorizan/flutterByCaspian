@@ -5,14 +5,14 @@ class Screen3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text('Screen 3'),
       ),
       body: Center(
         child: Container(
           child: RaisedButton(
-            child: Text('Got Screen2'),
+            child: Text('Go back to screen 1'),
             onPressed: () {
-              Navigator.pop(context);
+              Navigator.of(context).pushNamedAndRemoveUntil('screen1',(Route<dynamic> route) => false);
             },
           )
         ),

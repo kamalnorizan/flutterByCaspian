@@ -5,7 +5,7 @@ class Screen2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text('Screen 2'),
       ),
       body: Center(
         child: Container(
